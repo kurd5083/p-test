@@ -1,0 +1,37 @@
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Первая строка (10 кругов) -->
+  <circle cx="10" cy="10" r="8" fill="#EDEEFF"/>
+  <circle cx="30" cy="10" r="8" fill="#EDEEFF"/>
+  <circle cx="50" cy="10" r="8" fill="#EDEEFF"/>
+  <circle cx="70" cy="10" r="8" fill="#EDEEFF"/>
+  <circle cx="90" cy="10" r="8" fill="#EDEEFF"/>
+  <circle cx="110" cy="10" r="8" fill="#EDEEFF"/>
+  <circle cx="130" cy="10" r="8" fill="#EDEEFF"/>
+  <circle cx="150" cy="10" r="8" fill="#EDEEFF"/>
+  <circle cx="170" cy="10" r="8" fill="#EDEEFF"/>
+  <circle cx="190" cy="10" r="8" fill="#EDEEFF"/>
+  
+  <!-- Вторая строка (10 кругов) -->
+  <circle cx="10" cy="40" r="8" fill="#EDEEFF"/>
+  <circle cx="30" cy="40" r="8" fill="#EDEEFF"/>
+  <circle cx="50" cy="40" r="8" fill="#EDEEFF"/>
+  <circle cx="70" cy="40" r="8" fill="#EDEEFF"/>
+  <circle cx="90" cy="40" r="8" fill="#EDEEFF"/>
+  <circle cx="110" cy="40" r="8" fill="#EDEEFF"/>
+  <circle cx="130" cy="40" r="8" fill="#EDEEFF"/>
+  <circle cx="150" cy="40" r="8" fill="#EDEEFF"/>
+  <circle cx="170" cy="40" r="8" fill="#EDEEFF"/>
+  <circle cx="190" cy="40" r="8" fill="#EDEEFF"/>
+  
+  <!-- Третья строка (10 кругов) -->
+  <circle cx="10" cy="70" r="8" fill="#EDEEFF"/>
+  <circle cx="30" cy="70" r="8" fill="#EDEEFF"/>
+  <circle cx="50" cy="70" r="8" fill="#EDEEFF"/>
+  <circle cx="70" cy="70" r="8" fill="#EDEEFF"/>
+  <circle cx="90" cy="70" r="8" fill="#EDEEFF"/>
+  <circle cx="110" cy="70" r="8" fill="#EDEEFF"/>
+  <circle cx="130" cy="70" r="8" fill="#EDEEFF"/>
+  <circle cx="150" cy="70" r="8" fill="#EDEEFF"/>
+  <circle cx="170" cy="70" r="8" fill="#EDEEFF"/>
+  <circle cx="190" cy="70" r="8" fill="#EDEEFF"/>
+</svg>

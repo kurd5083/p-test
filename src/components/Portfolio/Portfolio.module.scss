@@ -1,0 +1,165 @@
+.portfolio {
+    position: relative;
+    box-sizing: border-box;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background: url('/src/assets/points_light.svg') no-repeat;
+        background-size: cover;
+        bottom: 50px;
+        left: -180px;
+        width: 400px;
+        height: 160px;
+        z-index: -1;
+        @media(max-width: 576px) {
+        left: -90px;
+        width: 200px;
+        height: 80px;
+                }
+    }
+
+    .portfolioContent {
+        margin: 0 auto;
+        max-width: 1520px;
+        overflow: hidden;
+
+        .portfolioContentHead {
+            padding-bottom: 60px;
+            border-bottom: 2px solid #EDEEFF;
+            margin: 0 100px;
+
+            @media(max-width: 768px) {
+                margin: 0 50px;
+            }
+
+            @media(max-width: 576px) {
+                margin: 0 32px;
+                padding-bottom: 25px;
+            }
+
+
+            .portfolioContentTitle {
+                position: relative;
+                display: inline-block;
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(90deg, #B224EF, #7579FF);
+                font-weight: 600;
+                font-size: 64px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: url('/src/assets/portfolio_effect.svg') no-repeat;
+                    background-size: cover;
+                    top: 60px;
+                    right: 0px;
+                    width: 155px;
+                    height: 23px;
+
+                    @media(max-width: 576px) {
+                        top: 25px;
+                        width: 75px;
+                        height: 12px;
+                    }
+                }
+
+                @media(max-width: 576px) {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .portfolioSwiper {
+            padding-top: 160px;
+            padding-bottom: 130px;
+            margin-left: 100px;
+
+            @media(max-width: 768px) {
+                margin-left: 50px;
+            }
+
+            @media(max-width: 576px) {
+                margin-left: 32px;
+                padding-top: 70px;
+                padding-bottom: 100px;
+            }
+
+
+            .swiperWrapper {
+                display: flex !important;
+                background-color: #fff;
+                border-radius: 40px;
+                @media(max-width: 576px) {
+                    border-radius: 15px;
+                }
+            }
+
+            .portfolioSlide {
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                width: 520px;
+                height: 280px;
+                border-radius: 40px;
+                box-shadow: 0 4px 24px 0 #4343432E;
+                padding: 0 50px 45px;
+
+                @media(max-width: 576px) {
+                    width: 210px;
+                    height: 110px;
+                    border-radius: 15px;
+                    padding: 0 20px 20px;
+                }
+
+                .portfolioSlideImg {
+                    width: 420px;
+                    height: 260px;
+                    border-radius: 16px;
+
+                    @media(max-width: 576px) {
+                        width: 170px;
+                        height: 105px;
+                        border-radius: 7px;
+                    }
+                }
+
+                .portfolioTitle {
+                    width: 250px;
+                    display: inline-block;
+                    color: transparent;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    background-image: linear-gradient(90deg, #B224EF, #7579FF);
+                    font-weight: 600;
+                    font-size: 24px;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #EDEEFF;
+                    margin-top: 37px;
+
+                    @media(max-width: 576px) {
+                        width: 100%;
+                        margin-top: 15px;
+                        padding-bottom: 2px;
+                        font-size: 12px;
+                    }
+                }
+
+                .portfolioText {
+                    margin-top: 10px;
+                    color: #5F6073;
+                    font-size: 14px;
+
+                    @media(max-width: 576px) {
+                        margin-top: 4px;
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

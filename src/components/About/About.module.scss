@@ -1,0 +1,263 @@
+.about {
+    position: relative;
+    background: url('/src/assets/about_bac.png') no-repeat center/100% 100%;
+    padding-bottom: 200px;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: url('/src/assets/points_light.svg') no-repeat;
+        background-size: cover;
+        top: 250px;
+        left: -180px;
+        width: 300px;
+        height: 120px;
+
+        @media(max-width: 991px) {
+            top: 125px;
+            left: -90px;
+            width: 150px;
+            height: 60px;
+        }
+        @media(max-width: 576px) {
+                top: 50px;
+            left: -45px;
+            width: 75px;
+            height: 30px;
+            }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background: url('/src/assets/points_light.svg') no-repeat;
+        background-size: cover;
+        bottom: 120px;
+        right: -180px;
+        width: 400px;
+        height: 160px;
+        z-index: 111;
+
+        @media(max-width: 991px) {
+            bottom: 70px;
+            right: -90px;
+            width: 200px;
+            height: 80px;
+        }
+        @media(max-width: 576px) {
+                bottom: 40px;
+            right: -45px;
+            width: 100px;
+            height: 40px;
+            }
+    }
+
+    @media(max-width: 991px) {
+        padding-bottom: 100px;
+    }
+
+    .aboutContent {
+        position: relative;
+        box-sizing: border-box;
+        padding: 75px 150px 100px;
+        max-width: 1520px;
+        margin: 0 auto;
+        z-index: 1;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: url('/src/assets/about_bac_grid.svg') no-repeat center/100% 100%;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        @media(max-width: 1200px) {
+            padding: 75px 100px 100px;
+        }
+        @media(max-width: 768px) {
+            padding: 30px 30px 100px;
+        }
+@media(max-width: 576px) {
+            padding: 30px;
+        }
+        .aboutContentTitle {
+            text-align: center;
+            font-size: 64px;
+            font-weight: 600;
+            color: #fff;
+            @media(max-width: 576px) {
+                    font-size: 24px;
+                }
+        }
+
+        .aboutBlocks {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 270px;
+            background-color: #fff;
+            padding: 40px 120px 60px;
+            border-radius: 60px;
+
+            @media(max-width: 1200px) {
+                padding: 40px 70px 60px;
+            }
+
+            @media(max-width: 991px) {
+                padding: 20px 70px 30px;
+                margin-top: 140px;
+                border-radius: 30px;
+            }
+            @media(max-width: 576px) {
+                padding: 15px 35px 20px;
+                border-radius: 20px;
+                margin-top: 60px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                background: url('/src/assets/about_bac_effect.svg');
+                background-size: cover;
+                top: -120px;
+                right: -140px;
+                width: 150px;
+                height: 150px;
+                z-index: 2;
+
+                @media(max-width: 1200px) {
+                    right: -80px;
+                }
+
+                @media(max-width: 991px) {
+                    width: 75px;
+                    height: 75px;
+                    top: -60px;
+                    right: -70px;
+                }
+                @media(max-width: 768px) {
+                    top: -40px;
+                    right: -25px;
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .aboutBlock {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+
+                @media(max-width: 576px) {
+                    gap: 6px;
+                }
+
+                img {
+                    @media(max-width: 991px) {
+                        height: 64px;
+                        width: 64px;
+                    }
+                     @media(max-width: 576px) {
+                height: 36px;
+                        width: 36px;
+            }
+                }
+
+                .aboutBlockTitle {
+                    font-size: 64px;
+                    font-weight: 700;
+                    color: #1B1C37;
+
+                    @media(max-width: 991px) {
+                        font-size: 36px;
+                    }
+                    @media(max-width: 576px) {
+                    font-size: 20px;
+                }
+                }
+
+                .aboutBlockText {
+                    font-size: 36px;
+                    font-weight: 600;
+                    color: #5F6073;
+
+                    @media(max-width: 991px) {
+                        font-size: 20px;
+                    }
+                     @media(max-width: 576px) {
+                    font-size: 12px;
+                }
+                }
+            }
+
+            .aboutBlockCenter {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 60px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                padding: 200px 60px 120px;
+                background: linear-gradient(90deg, #B224EF, #7579FF);
+                border-radius: 70px;
+                color: #fff;
+                overflow: hidden;
+
+                @media(max-width: 991px) {
+                    padding: 110px 30px 70px;
+                    border-radius: 35px;
+                    bottom: 30px;
+                }
+                @media(max-width: 576px) {
+                    padding: 60px 15px 40px;
+                    gap: 6px;
+                    border-radius: 20px;
+                    bottom: 20px;
+                }
+
+                .aboutBlockTitle {
+                    font-size: 64px;
+                    font-weight: 700;
+
+                    @media(max-width: 991px) {
+                        font-size: 36px;
+                    }
+                    @media(max-width: 576px) {
+                    font-size: 20px;
+                }
+                }
+
+                .aboutBlockText {
+                    font-size: 36px;
+                    font-weight: 600;
+
+                    @media(max-width: 991px) {
+                        font-size: 20px;
+                    }
+                    @media(max-width: 576px) {
+                    font-size: 12px;
+                }
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: url('/src/assets/colombian_ico.svg') no-repeat;
+                    background-size: contain;
+                    height: 100%;
+                    width: 100%;
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+        }
+    }
+}

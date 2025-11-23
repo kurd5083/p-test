@@ -1,0 +1,175 @@
+.welcome {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: url('/src/assets/points_light.svg') no-repeat;
+        background-size: cover;
+        top: -100px;
+        right: 0px;
+        width: 120px;
+        height: 120px;
+
+        @media(max-width: 991px) {
+            display: none;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        background: url('/src/assets/points_light.svg') no-repeat;
+        background-size: cover;
+        bottom: 80px;
+        left: 0px;
+        width: 140px;
+        height: 140px;
+        z-index: -1;
+        
+        @media(max-width: 991px) {
+            display: none;
+        }
+    }
+
+    .welcomeConainer {
+        position: relative;
+        max-width: 1520px;
+        margin: 0 auto;
+        padding: 0px 100px 114px;
+        box-sizing: border-box;
+
+        @media(max-width: 768px) {
+            padding: 0px 50px 100px;
+        }
+
+        @media(max-width: 576px) {
+            padding: 0px 32px 50px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: url('/src/assets/welcome_bac.png') no-repeat;
+            top: -78px;
+            right: 100px;
+            max-width: 685px;
+            width: 35vw;
+            height: 615px;
+            background-size: contain;
+            background-position: center;
+
+            @media(max-width: 991px) {
+                display: none;
+            }
+        }
+    }
+
+    .welcomeContent {
+        position: relative;
+        max-width: 375px;
+
+        @media(max-width: 576px) {
+            max-width: 215px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: url('/src/assets/arrow.svg') no-repeat;
+            bottom: -140px;
+            right: -140px;
+            width: 186px;
+            height: 186px;
+            @media(max-width: 768px) {
+                right: -100px;
+            }
+            @media(max-width: 576px) {
+                background-size: contain;
+                width: 138px;
+                height: 138px;
+                bottom: -110px;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: url('/src/assets/site_bac_points.svg') no-repeat;
+            bottom: -35px;
+            left: -110px;
+            width: 95px;
+            height: 137px;
+            z-index: -1;
+        }
+
+        .welcomeContentTitle {
+            position: relative;
+            font-size: 96px;
+            font-weight: 600;
+            color: #1B1C37;
+
+            @media(max-width: 576px) {
+                font-size: 56px;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                background: url('/src/assets/welcome_title_icon.png') no-repeat;
+                background-size: contain;
+                bottom: 20px;
+                right: -110px;
+                width: 80px;
+                height: 80px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                background: url('/src/assets/welcome_text_effect.svg') no-repeat;
+                background-size: contain;
+                top: -30px;
+                right: -30px;
+                width: 67px;
+                height: 73px;
+
+                @media(max-width: 576px) {
+                    top: -20px;
+                    left: 200px;
+                    width: 38px;
+                    height: 42px;
+                }
+            }
+        }
+
+        .welcomeContentText {
+            margin-top: 50px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 140%;
+
+            @media(max-width: 576px) {
+                margin-top: 30px;
+                font-size: 10px;
+            }
+        }
+
+        .welcomeContentButton {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            font-size: 24px;
+            padding: 16px 50px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #B224EF, #7579FF);
+            color: #fff;
+            @media(max-width: 576px) {
+                margin-top: 30px;
+                padding: 10px 28px;
+                font-size: 14px;
+            }
+        }
+    }
+}

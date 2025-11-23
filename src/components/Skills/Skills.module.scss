@@ -1,0 +1,172 @@
+.skills {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: url('/src/assets/points_light.svg') no-repeat;
+        background-size: cover;
+        top: 80px;
+        left: 0px;
+        width: 75px;
+        height: 100px;
+        @media(max-width: 768px) {
+            top: 50px;
+            width: 45px;
+            height: 60px;
+        }
+
+        @media(max-width: 576px) {
+            top: 45px;
+            width: 30px;
+            height: 40px;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background: url('/src/assets/points_light.svg') no-repeat;
+        background-size: cover;
+        bottom: 30px;
+        right: 0px;
+        width: 200px;
+        height: 140px;
+        z-index: -1;
+
+        @media(max-width: 768px) {
+            width: 130px;
+            height: 90px;
+        }
+
+        @media(max-width: 576px) {
+            bottom: 390px;
+            width: 25px;
+            height: 40px;
+        }
+    }
+
+
+    .skillsContent {
+        position: relative;
+        box-sizing: border-box;
+        padding: 100px 100px 150px;
+        max-width: 1520px;
+        margin: 0 auto;
+        color: #fff;
+
+
+        @media(max-width: 768px) {
+            padding: 50px 50px 100px;
+        }
+
+        @media(max-width: 576px) {
+            padding: 50px 32px 50px;
+        }
+
+
+        .skillsContentHead {
+            padding-bottom: 60px;
+
+            @media(max-width: 576px) {
+                padding-bottom: 40px;
+            }
+
+            .skillsContentTitle {
+                position: relative;
+                display: inline-block;
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(90deg, #B224EF, #7579FF);
+                font-weight: 600;
+                font-size: 64px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: url('/src/assets/skills_text_effect.svg') no-repeat;
+                    background-size: cover;
+                    top: -70px;
+                    right: -70px;
+                    width: 156px;
+                    height: 93px;
+
+                    @media(max-width: 576px) {
+                        width: 85px;
+                        height: 50px;
+                        top: -40px;
+                        right: -40px;
+                    }
+                }
+
+                @media(max-width: 576px) {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .skillsContentBlocks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-top: 2px solid#EDEEFF;
+            padding: 40px 0;
+            gap: 40px;
+            @media(max-width: 576px) {
+                padding: 20px 0;
+                gap: 20px;
+            }
+
+            .skillsContentCircle {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 220px;
+                height: 220px;
+                background: #EDEEFF;
+                border-radius: 50%;
+                color: #5F6073;
+                font-size: 36px;
+                font-weight: 600;
+                z-index: 3;
+                animation: fillCircle 1s ease-in-out;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    animation: loading 2.5s infinite;
+                    width: 150px;
+                    height: 150px;
+                    background: rgb(255, 255, 255);
+                    border-radius: 50%;
+                    z-index: -1;
+
+                    @media(max-width: 576px) {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+
+                @media(max-width: 576px) {
+                    font-size: 20px;
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+
+            .skillsContentText {
+                margin-top: 16px;
+                text-align: center;
+                font-weight: 400;
+                font-size: 24px;
+                color: #1B1C37;
+
+                @media(max-width: 576px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

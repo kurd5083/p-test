@@ -1,0 +1,79 @@
+.footer {
+    position: relative;
+    background-color: #EDEEFF;
+    border-radius: 60px 60px 0 0;
+    overflow: hidden;
+
+    @media(max-width: 576px) {
+           border-radius: 30px 30px 0 0;
+        }
+    &::before {
+        content: '';
+        position: absolute;
+        background: url('/src/assets/points_blue.svg') no-repeat;
+        background-size: cover;
+        top: 30px;
+        right: -120px;
+        width: 200px;
+        height: 80px;
+        @media(max-width: 576px) {
+            right: -60px;
+            width: 100px;
+            height: 40px;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background: url('/src/assets/points_blue.svg') no-repeat;
+        background-size: cover;
+        bottom: -30px;
+        left: -100px;
+        width: 200px;
+        height: 80px;
+        @media(max-width: 576px) {
+            bottom: -15px;
+            left: -50px;
+            width: 100px;
+            height: 40px;
+        }
+    }
+
+    .footerContent {
+        padding: 45px 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1520px;
+        margin: 0 auto;
+        gap: 30px;
+
+        @media(max-width: 576px) {
+            gap: 15px;
+            padding: 20px 0 18px;
+        }
+
+        .footerContentList {
+            display: flex;
+            gap: 45px;
+
+            @media(max-width: 576px) {
+                gap: 25px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        .footerContentCopyright {
+            color: #5F6073;
+
+            @media(max-width: 576px) {
+                font-size: 10px;
+            }
+        }
+    }
+}
